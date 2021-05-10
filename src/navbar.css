@@ -1,0 +1,111 @@
+/* logo */
+.logo-nav img {
+  width: 150px;
+}
+/* container navbar */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  height: 100px;
+  font-family: "Pangolin", cursive;
+}
+
+/* menu navbar */
+nav {
+  width: 100%;
+}
+.menu-nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.menu-nav ul li {
+  padding: 0px;
+  margin: 0px 20px;
+
+  border-radius: 10px;
+  width: 90px;
+  height: 30px;
+  text-align: center;
+}
+
+.menu-nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: small;
+}
+
+/* button */
+.button-nav button {
+  width: 150px;
+  height: 40px;
+  background: none;
+  border-radius: 10px;
+  border: 2px black solid;
+  font-family: "Pangolin", cursive;
+  color: black;
+}
+
+/* per hoveran duniawi */
+
+.button-nav button:hover {
+  background-color: rgb(221, 221, 221);
+}
+
+.menu-nav ul li:hover {
+  background-color: rgb(221, 221, 221);
+}
+
+/* menu bar */
+.menubar {
+  display: none;
+}
+.menubar img {
+  width: 25px;
+}
+
+@media (max-width: 915px) {
+  .menu-nav ul {
+    position: absolute;
+    background-color: rgb(58, 58, 58);
+    left: 0;
+    padding: 0;
+    margin-top: 50px;
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    transition: all 0.5s;
+  }
+
+  .menu-nav ul.muncul {
+    display: flex;
+    transform: translateX(-100%);
+    transition: all 0.5s;
+  }
+  .menu-nav ul li a {
+    color: white;
+  }
+
+  .menu-nav ul li {
+    display: flex;
+    width: 90%;
+    height: 90px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+  }
+
+  .button-nav button {
+    display: none;
+  }
+  .menubar {
+    display: flex;
+  }
+}
